@@ -13,7 +13,6 @@ public class JugadorUseCase {
         this.jugadorRepository = jugadorRepository;
     }
     public ArrayList<Jugador> getJugadores(){
-        ArrayList<Jugador> lista = new ArrayList<Jugador>();
-
+        return this.jugadorRepository.getJugadores();
     }
 }
