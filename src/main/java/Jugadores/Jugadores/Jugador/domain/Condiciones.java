@@ -10,4 +10,16 @@ public class Condiciones {
         this.velocidad = velocidad;
         this.recuperacion = recuperacion;
     }
+
+    public int getResistencia() {
+        return resistencia;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public int getRecuperacion() {
+        return recuperacion;
+    }
 }

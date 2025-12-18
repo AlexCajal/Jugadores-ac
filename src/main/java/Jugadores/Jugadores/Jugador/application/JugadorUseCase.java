@@ -7,6 +7,7 @@ import Jugadores.Jugadores.Jugador.domain.JugadorRepository;
 import java.util.ArrayList;
 
 public class JugadorUseCase {
+
     private JugadorRepository jugadorRepository;
 
     public JugadorUseCase (JugadorRepository jugadorRepository){
@@ -14,5 +15,11 @@ public class JugadorUseCase {
     }
     public ArrayList<Jugador> getJugadores(){
         return this.jugadorRepository.getJugadores();
+    }
+    public Jugador getJugadorPorId(String id){
+        return this.jugadorRepository.getJugadorPorId(id);
+    }
+    public void addJugador(Jugador j){
+        this.jugadorRepository.addJugador(j);
     }
 }
